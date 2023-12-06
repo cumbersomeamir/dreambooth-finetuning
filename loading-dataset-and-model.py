@@ -83,10 +83,6 @@ DATA_DIR = "/kaggle/input/abids-photos"
 REPO_ID = "kingabzpro/sdxl-lora-abid" #Huggingface repo id
 
 
-from kaggle_secrets import UserSecretsClient
-user_secrets = UserSecretsClient()
-HF_TOKEN = user_secrets.get_secret("HUGGINGFACE_TOKEN")
-
 
 #Display uploaded images
 from PIL import Image
