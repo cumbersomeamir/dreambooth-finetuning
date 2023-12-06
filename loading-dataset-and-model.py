@@ -79,8 +79,8 @@ image
 #
 PROJECT_NAME = "Dreambooth_SDXL"
 MODEL_NAME = "stabilityai/stable-diffusion-xl-base-1.0"
-DATA_DIR = "/kaggle/input/abids-photos"
-REPO_ID = "kingabzpro/sdxl-lora-abid" #Huggingface repo id
+DATA_DIR = "/amir-finetune/"
+REPO_ID = "Amirkid/dreambooth-finetuning" #Huggingface repo id
 
 
 
@@ -107,5 +107,5 @@ def image_grid(imgs, rows, cols, resize=256):
 import glob
 
 print("The following are the images for finetune")
-imgs = [Image.open(path) for path in glob.glob("/kaggle/input/abids-photos/*.jpg")]
+imgs = [Image.open(path) for path in glob.glob("/amir-finetune/*.jpg")]
 image_grid(imgs, 1, 5)
