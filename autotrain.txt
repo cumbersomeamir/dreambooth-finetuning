@@ -1,0 +1,15 @@
+!autotrain dreambooth \
+--model $MODEL_NAME \
+--project-name $PROJECT_NAME \
+--image-path $DATA_DIR \
+--prompt "A photo of Abid Ali Awan wearing casual clothes, taking a selfie, and smiling." \
+--resolution 1024 \
+--batch-size 1 \
+--num-steps 500 \
+--gradient-accumulation 4 \
+--lr 1e-4 \
+--fp16 \
+--gradient-checkpointing \
+--push-to-hub \
+--token $HF_TOKEN \
+--repo-id $REPO_ID
