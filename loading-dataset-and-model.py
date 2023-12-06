@@ -107,5 +107,5 @@ def image_grid(imgs, rows, cols, resize=256):
 import glob
 
 print("The following are the images for finetune")
-imgs = [Image.open(path) for path in glob.glob("/amir-finetune/*.jpg")]
+imgs = [Image.open(path) for path in glob.glob("/amir-finetune/*.png")]
 image_grid(imgs, 1, 5)
